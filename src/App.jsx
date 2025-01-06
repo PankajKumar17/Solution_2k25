@@ -1,19 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import LandingPage from "./components/LandingPage";
 import AboutUs from "./components/AboutUs";
 import SponsorsPage from "./components/SponsorsPage";
+import Loader from "./components/Loader";
 
-function App() {
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer); 
+  }, []);
+
+  if (isLoading) {
+    return <Loader />;
+  }
+
   return (
     <div>
-        <Navbar />
-        <LandingPage />
-        <AboutUs />
-        <SponsorsPage />
+      <Navbar />
+      <LandingPage />
+      <AboutUs />
+      <SponsorsPage />
     </div>
   );
-  
-}
+};
 
 export default App;
