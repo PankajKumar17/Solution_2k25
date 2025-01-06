@@ -1,0 +1,68 @@
+#about-us {
+  height: 280vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  overflow: hidden; /* Prevent content overflow during animation */
+}
+
+#about-us img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about-us h1 {
+  font-size: 5rem;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  text-align: center;
+}
+
+#about-us .letter {
+  height: 100vh;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 8vh;
+  margin-left: 8vw;
+}
+
+#about-us .letter img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(0); /* Start rolled up horizontally */
+  transform-origin: left center; /* Unroll from the left */
+}
+
+#about-us .left {
+  color: black;
+  padding: 0vh 0vw 10vh 21vw;
+  text-align: justify;
+  line-height: 1.4;
+  transform: translateX(-100%); /* Start off-screen to the left */
+  opacity: 0;
+}
+
+#about-us .right {
+  padding: 0 21vw 8vh 5vw;
+  transform: translateX(100%); /* Start off-screen to the right */
+  opacity: 0;
+}
