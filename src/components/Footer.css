@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.footer-container {
+  background-color: #010113;
+  height: 100vh;
+  width: 100vw;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  position: relative;
+  overflow: hidden;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+}
+.lamp {
+  position: absolute;
+  top: -65vh;
+  left: 0;
+  z-index: 1;
+}
+.above {
+  z-index: 10;
+}
+
+.header-text {
+  padding-top: 8vh;
+  font-size: 18px;
+  margin-bottom: 8vh;
+  letter-spacing: 2px;
+}
+.line {
+  margin: 2vh 12vw;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0vh 12vw 0vh 12vw;
+}
+
+.contact-section {
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-stretch: narrower;
+  letter-spacing: 8px;
+  font-size: 2.6rem;
+  margin-bottom: 6vh;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+}
+
+.samurai-image img {
+  width: 30vw;
+  height: auto;
+}
+
+.social-media {
+  justify-self: flex-start;
+  padding: 0vh 0vw 0vh 12vw;
+}
+
+.social-media h3 {
+  padding-right: 70vw;
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+
+.icons {
+  justify-self: flex-start;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icons img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-note {
+  justify-self: flex-start;
+  padding: 2vh 12vw 0vh 12vw;
+  font-size: 14px;
+}

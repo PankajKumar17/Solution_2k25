@@ -4,6 +4,7 @@ import LandingPage from "./components/LandingPage";
 import AboutUs from "./components/AboutUs";
 import SponsorsPage from "./components/SponsorsPage";
 import Loader from "./components/Loader";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,6 +27,7 @@ const App = () => {
       <LandingPage />
       <AboutUs />
       <SponsorsPage />
+      <Footer/>
     </div>
   );
 };
