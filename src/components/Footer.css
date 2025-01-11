@@ -12,13 +12,16 @@
   font-family: "Bebas Neue", cursive;
   letter-spacing: 2px;
 }
+
 .lamp {
   position: absolute;
   top: -65vh;
   left: 0;
   z-index: 1;
 }
+
 .above {
+  position: relative;
   z-index: 10;
 }
 
@@ -28,21 +31,26 @@
   margin-bottom: 8vh;
   letter-spacing: 2px;
 }
+
 .line {
   margin: 2vh 12vw;
   height: 3px;
   border-radius: 2px;
   background-color: #ffffff;
 }
+
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0vh 12vw 0vh 12vw;
+  padding: 0vh 12vw;
+  flex-wrap: wrap;
 }
 
 .contact-section {
   text-align: left;
+  flex: 1 1 40%;
+  min-width: 250px;
 }
 
 .contact-section h2 {
@@ -61,6 +69,23 @@
 .contact-card {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.contact-card h2 {
+  position: absolute;
+  left: 90px;
+  font-size: x-large;
+  top: 10px;
+  color: transparent;
+}
+
+.contact-card p {
+  position: absolute;
+  top: 60px;
+  left: 140px;
+  letter-spacing: 5px;
+  color: transparent;
 }
 
 .samurai-image img {
@@ -71,6 +96,8 @@
 .social-media {
   justify-self: flex-start;
   padding: 0vh 0vw 0vh 12vw;
+  flex: 1 1 40%;
+  min-width: 250px;
 }
 
 .social-media h3 {
@@ -100,4 +127,107 @@
   justify-self: flex-start;
   padding: 2vh 12vw 0vh 12vw;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    min-height: 100vh;
+    font-size: 14px;
+  }
+  .lamp img{
+    height: 160vh;
+    width: 120vw;
+  }
+  .header-text {
+    font-size: 16px;
+    margin-bottom: 4vh;
+  }
+
+  .line {
+    margin: 2vh 5vw;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 0 5vw;
+  }
+
+  .contact-section,
+  .social-media {
+    flex: 1 1 100%;
+    min-width: auto;
+    text-align: center;
+    padding: 0 5vw;
+  }
+  .contact-card img{
+    width: 40vw;
+  }
+
+  .samurai-image img {
+    width: 50vw;
+  }
+
+  .social-media h3 {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .footer-note {
+    font-size: 12px;
+    padding: 2vh 5vw 0vh 5vw;
+  }
+
+  .contact-card h2,
+  .contact-card p {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    height: auto;
+  }
+
+  .lamp img{
+    height: 160vh;
+    width: 120vw;
+  }
+  .header-text {
+    font-size: 14px;
+    margin-bottom: 3vh;
+  }
+
+  .line {
+    margin: 2vh 3vw;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 4vh;
+  }
+
+  .contact-card img{
+    width: 70vw;
+  }
+
+  .contact-card h2,
+  .contact-card p {
+    font-size: 14px;
+  }
+
+  .social-media h3 {
+    font-size: 16px;
+  }
+
+  .footer-note {
+    font-size: 12px;
+  }
+
+  .icons {
+    gap: 15px;
+  }
+  .samurai-image img {
+    width: 80vw;
+  }
 }
