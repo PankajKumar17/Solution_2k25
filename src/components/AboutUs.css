@@ -88,7 +88,7 @@
   }
 
   #about-us iframe {
-    margin-bottom: 30rem; /* Add space between iframe and content below */
+    margin-bottom: 40rem; /* Add space between iframe and content below */
     width: 100%; /* Make iframe fit container */
     
   }
@@ -119,7 +119,7 @@
 
   #about-us iframe {
     /* Space above the iframe relative to the letter */
-    margin-bottom: 50rem; /* Add spacing below the iframe */
+    margin-bottom: 70rem; /* Add spacing below the iframe */
     width: 100%; /* Keep iframe width full */
     height: 50%; /* Adjust height automatically */
   }
