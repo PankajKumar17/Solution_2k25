@@ -9,7 +9,7 @@
   justify-content: start;
   align-items: center;
   color: white;
-  overflow: hidden; /* Prevent content overflow during animation */
+  overflow: hidden; 
 }
 
 #about-us img {
@@ -48,8 +48,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scaleX(0); /* Start rolled up horizontally */
-  transform-origin: left center; /* Unroll from the left */
+  transform: scaleX(0); 
+  transform-origin: left center; 
 }
 
 #about-us .left {
@@ -57,70 +57,70 @@
   padding: 0vh 0vw 10vh 21vw;
   text-align: justify;
   line-height: 1.4;
-  transform: translateX(-100%); /* Start off-screen to the left */
+  transform: translateX(-100%); 
   opacity: 0;
 }
 
 #about-us .right {
   padding: 0 21vw 8vh 5vw;
-  transform: translateX(100%); /* Start off-screen to the right */
+  transform: translateX(100%); 
   opacity: 0;
 }
 
 @media (max-width: 700px) {
   #about-us .letter {
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column;
     height: 60%;
-    margin-left: 0; /* Remove unnecessary margin */
-    align-items: center; /* Center the content */
+    margin-left: 0;
+    align-items: center; 
   }
 
   #about-us .left,
   #about-us .right {
     color: aliceblue;
-    width: 90%; /* Ensure both sections are properly sized */
+    width: 90%; 
     padding: 2vh 5vw;
     text-align: justify;
   }
 
   #about-us .left p {
-    margin-bottom: 10rem; /* Add spacing below the paragraph */
+    margin-bottom: 10rem; 
   }
 
   #about-us iframe {
-    margin-bottom: 40rem; /* Add space between iframe and content below */
-    width: 100%; /* Make iframe fit container */
+    margin-bottom: 40rem; 
+    width: 100%;
     
   }
 }
 
 @media (max-width: 440px) {
   #about-us h1 {
-    font-size: 1.8rem; /* Reduce the title size */
+    font-size: 1.8rem; 
     margin-top: 13vh;
   }
 
   #about-us .letter {
-    flex-direction: column; /* Maintain vertical stacking */
+    flex-direction: column; 
     align-items: center;
     height: 70%;
   }
 
   #about-us .left {
     color: aliceblue;
-    width: 95%; /* Adjust width */
-    padding: 1.5vh 4vw; /* Adjust padding for better fit */
-    font-size: 0.9rem; /* Smaller font size */
+    width: 95%; 
+    padding: 1.5vh 4vw; 
+    font-size: 0.9rem; 
   }
 
   #about-us .left p {
-    margin-bottom: rem; /* Adjust spacing below the paragraph */
+    margin-bottom: rem;
   }
 
   #about-us iframe {
-    /* Space above the iframe relative to the letter */
-    margin-bottom: 70rem; /* Add spacing below the iframe */
-    width: 100%; /* Keep iframe width full */
-    height: 50%; /* Adjust height automatically */
+   
+    margin-bottom: 70rem; 
+    width: 100%;
+    height: 50%; 
   }
 }
