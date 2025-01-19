@@ -1,33 +1,19 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import LandingPage from "./components/LandingPage";
-import AboutUs from "./components/AboutUs";
-import SponsorsPage from "./components/SponsorsPage";
-import Loader from "./components/Loader";
-import Footer from "./components/Footer";
+import React from "react";
+import MainPage from "./pages/mainPage";
+import Events from "./components/Events";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer); 
-  }, []);
-
-  if (isLoading) {
-    return <Loader />;
-  }
 
   return (
     <div>
-      <Navbar />
-      <LandingPage />
-      <AboutUs />
-      <SponsorsPage />
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />}/>
+          <Route path="/events" element={<Events />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
