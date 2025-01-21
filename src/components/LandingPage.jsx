@@ -16,14 +16,14 @@ function LandingPage() {
 
   return (
     <div className="container">
-      <div id="box1"><img src="src/Assets/Desktop - 12.svg" alt="Desktop" /></div>
-      <div id="box2"><img src="src/Assets/Moon.svg" alt="Moon" /></div>
-      <div id="box3"><img src="src/Assets/BackMountain.svg" alt="Back Mountain" /></div>
+      <div id="box1"><img src="/assets/Desktop - 12.svg" alt="Desktop" /></div>
+      <div id="box2"><img src="/assets/Moon.svg" alt="Moon" /></div>
+      <div id="box3"><img src="/assets/BackMountain.svg" alt="Back Mountain" /></div>
       <div className="title">
-      <img className="solution" src="src/Assets/SOLUTION_2K25.svg" alt="" />
+      <img className="solution" src="/assets/SOLUTION_2K25.svg" alt="" />
       </div>
-      <div id="box4"><img src="src/Assets/LeftMountain.svg" alt="Left Mountain" /></div>
-      <div id="box5"><img src="src/Assets/SideTree.svg" alt="Side Tree" /></div>
+      <div id="box4"><img src="/assets/LeftMountain.svg" alt="Left Mountain" /></div>
+      <div id="box5"><img src="/assets/SideTree.svg" alt="Side Tree" /></div>
     </div>
   );
 }

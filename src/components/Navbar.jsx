@@ -10,17 +10,17 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <img src="src/Assets/logo.svg" alt="Solutions logo" className="solutions-logo" />
+      <img src="/assets/logo.svg" alt="Solutions logo" className="solutions-logo" />
       <div className={`hamburger-button ${menuActive ? "active" : ""}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
       <div className={`main-navbar ${menuActive ? "active" : ""}`}>
-        <a href="/"><img className="nav_btn_img" src="src/Assets/home.svg" alt="home-icon" /></a>
-        <a href="./events"><img className="nav_btn_img" src="src/Assets/about us.svg" alt="About-us" /></a>
-        <a href="./team"><img className="nav_btn_img" src="src/Assets/our team.svg" alt="Our-Team" /></a>
-        <a href="./schedule/index.html?index=0"><img className="nav_btn_img" src="src/Assets/Register.svg" alt="register" /></a>
+        <a href="/"><img className="nav_btn_img" src="/assets/home.svg" alt="home-icon" /></a>
+        <a href="./events"><img className="nav_btn_img" src="/assets/about us.svg" alt="About-us" /></a>
+        <a href="./team"><img className="nav_btn_img" src="/assets/our team.svg" alt="Our-Team" /></a>
+        <a href="./schedule/index.html?index=0"><img className="nav_btn_img" src="/assets/Register.svg" alt="register" /></a>
       </div>
     </nav>
   );
