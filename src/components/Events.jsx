@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar2 from "./Navbar2";
 import Footer from "./Footer"
-import "./events.css";
+import "./Events.css";
 
 const Events = () => {
   const eventCategories = [
