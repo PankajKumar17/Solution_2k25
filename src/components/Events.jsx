@@ -5,22 +5,22 @@ import "./Events.css";
 
 const Events = () => {
   const eventCategories = [
-    { name: "Assets/Gaming.svg" },
-    { name: "Assets/Gaming3.svg" },
-    { name: "Assets/Gaming4.svg" },
-    { name: "Assets/CodingEvents.svg" },{ name: "Assets/Gaming3.svg" },
-    { name: "Assets/Gaming4.svg" },
-    { name: "Assets/OpenEvents.svg" },{ name: "Assets/Gaming3.svg" },
-    { name: "Assets/Gaming4.svg" },
-    { name: "Assets/Robotics.svg" },{ name: "Assets/Gaming3.svg" },
-    { name: "Assets/Gaming4.svg" },
-    { name: "Assets/CyberSec.svg" },{ name: "Assets/Gaming3.svg" },
-    { name: "Assets/Gaming4.svg" },
-    { name: "Assets/GDXR.svg" },{ name: "Assets/Gaming3.svg" },
-    { name: "Assets/Gaming4.svg" },
-    { name: "Assets/ML.svg" },{ name: "Assets/Gaming3.svg" },
-    { name: "Assets/Gaming4.svg" },
-    { name: "Assets/EV.svg" },
+    { name: "src/Assets/Gaming.svg" },
+    { name: "src/Assets/Gaming3.svg" },
+    { name: "src/Assets/Gaming4.svg" },
+    { name: "src/Assets/CodingEvents.svg" },{ name: "src/Assets/Gaming3.svg" },
+    { name: "src/Assets/Gaming4.svg" },
+    { name: "src/Assets/OpenEvents.svg" },{ name: "src/Assets/Gaming3.svg" },
+    { name: "src/Assets/Gaming4.svg" },
+    { name: "src/Assets/Robotics.svg" },{ name: "src/Assets/Gaming3.svg" },
+    { name: "src/Assets/Gaming4.svg" },
+    { name: "src/Assets/CyberSec.svg" },{ name: "src/Assets/Gaming3.svg" },
+    { name: "src/Assets/Gaming4.svg" },
+    { name: "src/Assets/GDXR.svg" },{ name: "src/Assets/Gaming3.svg" },
+    { name: "src/Assets/Gaming4.svg" },
+    { name: "src/Assets/ML.svg" },{ name: "src/Assets/Gaming3.svg" },
+    { name: "src/Assets/Gaming4.svg" },
+    { name: "src/Assets/EV.svg" },
   ];
 
   return (
@@ -31,7 +31,7 @@ const Events = () => {
         </div>
 
         <div className="events-title">
-          <img className="event-img" src="Assets/EventsLogo.svg" alt="" />
+          <img className="event-img" src="src/Assets/EventsLogo.svg" alt="" />
         </div>
         <div className="events-grid">
             <div className="event-grid-bg"></div>
