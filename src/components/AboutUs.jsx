@@ -38,10 +38,10 @@ function AboutUs() {
 
   return (
     <section id="about-us">
-      <img src="Assets/Background.svg" alt="" />
+      <img src="/assets/Background.svg" alt="" />
       <h1>ABOUT US</h1>
       <div className="letter">
-        <img src="Assets/letter.svg" alt="" />
+        <img src="/assets/letter.svg" alt="" />
         <div className="left">
           <p>
           Behold the extravaganza of jolliness! Army Institute of Technology brings you the gala of its annual tech fest "Solutions" to celebrate the glory of talent and insight. With more than 20 events under the belt, Solutions provides an environment of competition with ecstasy and style. With 7 successful editions in its list, Solutions is back with rip-roaring events to transcend the norm.

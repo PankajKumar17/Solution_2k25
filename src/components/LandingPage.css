@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+
 
 .container {
     position: relative;
     width: 100vw;
     height: 100vh;
     /* margin-top: 6.5rem; */
-    
+    font-family: "Bebas Neue", cursive;
   }
   
   .container div img {
@@ -29,9 +32,9 @@
   
   #box2 {
     bottom: -400px;
-    left: 50%;
-    height: 350px;
-    width: 350px;
+    left: 40%;
+    height: 380px;
+    width: 380px;
     transform: translateX(-50%);
     z-index: 2;
   }
@@ -56,4 +59,34 @@
     right: 0;
     z-index: 5;
   }
-  
+  .title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 10;
+  }
+  .title .solution{
+    width: 80%;
+  }
+  @media (max-width: 1024px) {
+    .title{
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      z-index: 10;
+    }
+    .title .solution{
+      width: 90%;
+    }
+  }
+  @media (max-width: 440px) {
+    .title{
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      z-index: 10;
+    }
+    .title .solution{
+      width: 100%;
+    }
+  }

@@ -67,6 +67,50 @@
   opacity: 0;
 }
 
+
+
+
+@media (max-width: 1024px) {
+  #about-us h1 {
+    font-size: 4.8rem;
+    margin-top: 13vh;
+  }
+  #about-us .letter {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    height: 70%;
+  }
+  #about-us .letter img {
+    width: 250%;
+    height: 35%;
+    rotate: 90deg !important;
+    top: -40vh;
+    left: 45vw;
+  }
+
+  #about-us .left {
+    color: aliceblue;
+    width: 68%;
+    padding: 24.5vh 0vh 5vw 5vw;
+    font-size: 1.9rem;
+  }
+
+  #about-us .left p {
+    color: black;
+    margin-bottom: rem;
+  }
+
+  #about-us iframe {
+    margin-bottom: 90rem;
+    width: 230%;
+    height: 40%;
+    margin-left: -4rem;
+  }
+}
+
+
+
 @media (max-width: 700px) {
   #about-us .letter {
     flex-direction: column;

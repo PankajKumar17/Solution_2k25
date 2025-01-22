@@ -7,12 +7,12 @@ const Loader = () => {
       <div id="loader">
         <img
           className="tb"
-          src="Assets/drago3.svg"
+          src="/assets/drago3.svg"
           alt="Outer Box"
         />
         <img
           className="tb2"
-          src="Assets/tb2.svg"
+          src="/assets/tb2.svg"
           alt="Inner Box"
         />
       </div>

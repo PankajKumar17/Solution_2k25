@@ -1,5 +1,5 @@
 import React from "react";
-import MainPage from "./pages/mainPage";
+import MainPage from "./pages/MainPage";
 import Events from "./components/Events";
 import Teams from "./components/Team";
 
