@@ -113,12 +113,11 @@
 /* Media Queries for Responsive Design */
 @media (max-width: 992px) {
   .member-cards-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two members per row on medium screens */
-  }
+    grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 576px) {
   .member-cards-grid {
-    grid-template-columns: 1fr; /* One member per row on small screens */
+    grid-template-columns: 1fr; 
   }
 }
