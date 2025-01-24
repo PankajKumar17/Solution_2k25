@@ -1,8 +1,8 @@
 import React from "react";
-import "./team.css";
+import "./Team.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./Navbar";
+import Navbar2 from "./Navbar2";
 import Footer from "./Footer";
 
 const MemberCard = ({ image, name }) => (
@@ -46,9 +46,10 @@ const additionalMembers = [
   { name: "DEEPAK", image: "/team/deepak.svg" },
 ];
 
+
 const Team = () => (
   <div className="team-page">
-    <Navbar />
+    <Navbar2 />
     <div
       id="teamCarousel"
       className="carousel slide team-carousel"
