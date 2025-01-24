@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./team.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-              // MEMBER-CARD
 const MemberCard = ({ image, name }) => (
   <div className="member-card">
     <img src={image} alt={name} className="member-image" />
@@ -50,13 +49,11 @@ const additionalMembers = [
 const Team = () => (
   <div className="team-page">
     <Navbar />
-    {/* Carousel Section */}
     <div
       id="teamCarousel"
       className="carousel slide team-carousel"
       data-bs-ride="carousel"
     >
-      {/* Indicators */}
       <div className="carousel-indicators">
         {teamMembers.map((_, index) => (
           <button
@@ -68,8 +65,6 @@ const Team = () => (
           ></button>
         ))}
       </div>
-
-      {/* Team Members */}
       <div className="carousel-inner">
         {teamMembers.map((member, index) => (
           <div
@@ -93,8 +88,6 @@ const Team = () => (
           </div>
         ))}
       </div>
-
-      {/* Navigation Buttons */}
       <button
         className="carousel-control-prev"
         type="button"
@@ -112,8 +105,6 @@ const Team = () => (
         <span className="carousel-control-next-icon"></span>
       </button>
     </div>
-
-    {/* Team Members Section */}
     <div className="Te-member-main">
       <div className="Te-member-Bg1">
         <h1 className="team-title">OUR TEAM</h1>
@@ -124,16 +115,15 @@ const Team = () => (
         </div>
       </div>
       <div className="Te-member-Bg2">
-        <h1 className="team-title">AI TITANS</h1>
+        <h1 className="team-title">AI-TITANS</h1>
         <div className="member-cards-grid">
           {additionalMembers.map((member, index) => (
             <MemberCard key={index} image={member.image} name={member.name} />
           ))}
         </div>
-      </div> 
+      </div>
+      <Footer />
     </div>
-    
-    <Footer />
   </div>
 );
 
