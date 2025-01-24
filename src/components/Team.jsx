@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-// Reusable MemberCard component
+              // MEMBER-CARD
 const MemberCard = ({ image, name }) => (
   <div className="member-card">
     <img src={image} alt={name} className="member-image" />
@@ -115,7 +115,7 @@ const Team = () => (
 
     {/* Team Members Section */}
     <div className="Te-member-main">
-      <div className="Te-member-Bg">
+      <div className="Te-member-Bg1">
         <h1 className="team-title">OUR TEAM</h1>
         <div className="member-cards-grid">
           {additionalMembers.map((member, index) => (
@@ -123,7 +123,7 @@ const Team = () => (
           ))}
         </div>
       </div>
-      <div className="Te-member-Bg">
+      <div className="Te-member-Bg2">
         <h1 className="team-title">AI TITANS</h1>
         <div className="member-cards-grid">
           {additionalMembers.map((member, index) => (
@@ -132,7 +132,7 @@ const Team = () => (
         </div>
       </div> 
     </div>
-
+    
     <Footer />
   </div>
 );

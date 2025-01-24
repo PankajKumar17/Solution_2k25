@@ -1,8 +1,11 @@
-/* General Team Page Styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 .team-page {
   background-color: #000000;
   color: white;
   min-height: 100vh;
+  font-weight: bold;
+  font-family: poppins;
 }
 
 .team-page .text-section {
@@ -35,13 +38,24 @@
 /* Member Section Styling */
 .Te-member-main {
   background: black;
+  font-family: "Bebas Neue", cursive;
   padding: 4rem 1.5rem;
   color: white;
+  letter-spacing: 2px;
+  font-weight: ultrabold;
   text-align: center;
 }
 
-.Te-member-Bg {
+.Te-member-Bg1 {
   background-image: url("/team/flamebg1.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+ 
+}
+
+.Te-member-Bg2 {
+  background-image: url("/team/flamebg2.svg");
   background-size: cover;
   background-position: center;
   padding: 2rem;
@@ -49,7 +63,7 @@
 }
 
 .team-title {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #ffffff;
   margin-bottom: 2rem;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
