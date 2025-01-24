@@ -1,76 +1,110 @@
-/* Overall carousel container styling */
-.team-carousel-container {
-  background-color: #000000; /* Light background for the carousel */
-  padding: 2rem 2rem;
+/* General Team Page Styling */
+.team-page {
+  background-color: #000000;
+  color: white;
+  min-height: 100vh;
 }
 
-/* Text Section Styling */
-.text-section {
+.team-page .text-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Align content to the left */
-  height: 100%; /* Ensure full height for alignment */
-  text-align: left; /* Ensure left alignment for text */
-  background-color: black; /* Black background for contrast */
+  align-items: flex-start;
+  padding: 5rem;
+  background-color: black;
   color: white;
-  overflow: hidden; /* Prevent text from spilling */
-  padding-left: 2rem; /* Add padding to move content further left */
 }
 
-.text-section h1,h3,p {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-left: 10rem;
-  margin-bottom: 1rem;
+.team-page .text-section h1,
+.team-page .text-section h3,
+.team-page .text-section p {
+  margin-left: 6rem;
+  color: white;
 }
 
-
-
-.text-section p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 1rem;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-/* Image Section Styling */
-.image-section {
+.team-page .image-section {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100%;
-  padding: 1rem;
+  align-items: center;
 }
 
-.image-section img {
-  max-width: 100%; /* Ensure the image doesn't exceed the container width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Prevent image distortion */
-  border-radius: 8px; /* Slight rounding for aesthetics */
+.team-page .carousel-indicators .active {
+  background-color: #f5ae22;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .text-section {
-    padding: 1.5rem 1.5rem 1.5rem 2rem; /* Keep left padding more pronounced */
-  }
+/* Member Section Styling */
+.Te-member-main {
+  background: black;
+  padding: 4rem 1.5rem;
+  color: white;
+  text-align: center;
+}
 
-  .image-section {
-    padding: 1rem;
+.Te-member-Bg {
+  background-image: url("/team/flamebg1.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.team-title {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.member-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four members per row */
+  gap: 2rem; /* Spacing between cards */
+  justify-content: center;
+  align-items: center;
+}
+
+.member-card {
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(245, 174, 34, 0.5);
+}
+
+.member-image {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.member-card:hover .member-image {
+  transform: scale(1.1);
+  border-color: white;
+}
+
+.member-details h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+  .member-cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two members per row on medium screens */
   }
 }
 
 @media (max-width: 576px) {
-  .text-section {
-    padding: 1rem 1rem 1rem 1.5rem; /* Adjust left padding for smaller screens */
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-  .image-section img {
-    max-width: 100%;
-    height: auto;
+  .member-cards-grid {
+    grid-template-columns: 1fr; /* One member per row on small screens */
   }
 }
