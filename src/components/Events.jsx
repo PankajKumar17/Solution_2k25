@@ -32,6 +32,7 @@ const Events = () => {
 
         <div className="events-title">
           <img className="event-img" src="/assets/EventsLogo.svg" alt="" />
+        <div className="blur"></div>
         </div>
         <div className="events-grid">
             <div className="event-grid-bg"></div>
