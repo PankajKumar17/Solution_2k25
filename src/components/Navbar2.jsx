@@ -20,7 +20,7 @@ function Navbar2() {
         <a href="/"><img className="nav_btn_img" src="/assets/home.svg" alt="home-icon" /></a>
         <a href="./events"><img className="nav_btn_img" src="/assets/about us.svg" alt="About-us" /></a>
         <a href="./team"><img className="nav_btn_img" src="/assets/our team.svg" alt="Our-Team" /></a>
-        <a href="./schedule/index.html?index=0"><img className="nav_btn_img" src="/assets/Register.svg" alt="register" /></a>
+        <a href="https://unstop.com/college-fests/solutions-2k25-army-institute-of-technology-ait-pune-312122/amp"><img className="nav_btn_img" src="/assets/Register.svg" alt="register" /></a>
       </div>
     </nav>
   );

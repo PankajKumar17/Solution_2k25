@@ -56,12 +56,11 @@ function AboutUs() {
         <img loading="lazy" src="/assets/letter.svg" alt="" />
         <div className="left">
           <p>
-            Behold the extravaganza of jolliness! Army Institute of Technology
-            brings you the gala of its annual tech fest "Solutions" to celebrate
-            the glory of talent and insight. With more than 20 events under the
-            belt, Solutions provides an environment of competition with ecstasy
-            and style. With 7 successful editions in its list, Solutions is back
-            with rip-roaring events to transcend the norm.
+          Gear up for Pune’s Biggest Techfest, Solutions 2k25, from March 18th to 23rd, 2025, hosted by the Technical Board of the Army Institute of Technology!
+
+Experience 25+ electrifying events, from coding challenges to robotics quests, in a dynamic atmosphere buzzing with innovation and technology.
+
+Compete for glory with a colossal prize pool of 9+ lakhs, making this an unmissable high-stakes extravaganza!
           </p>
         </div>
         <div className="right">
